@@ -587,9 +587,6 @@ nav {
   header {
     position: relative !important;
     width: 100%;
-    /* left: 0;
-    right: 0;
-    bottom: 96%; */
     background-color: transparent;
   }
   nav {
