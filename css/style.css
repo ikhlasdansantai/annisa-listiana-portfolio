@@ -350,6 +350,15 @@ nav {
 .skill-icon {
   width: 4rem;
 }
+.hard-skill-container {
+  margin-left: 1.5rem;
+  margin-inline: auto;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .accordion-menu {
   margin-left: auto;
   font-size: 1.45rem;
