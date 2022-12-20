@@ -16,8 +16,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Swiper jangan mencuri -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!-- Favicon -->
-    <!-- <link id="favicon" rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png" /> -->
     <title>Portfolio | Annisa Listiana</title>
   </head>
   <body>
@@ -30,7 +31,8 @@
       <!-- navbar starts -->
       <header class="display-f">
         <nav class="navbar display-f">
-          <a href="/" class="logo"><i class="fab fa-node-js"></i> Logo</a>
+          <!-- <a href="/" class="logo"><i class="fab fa-node-js"></i> Logo</a> -->
+          <p>LOGOKU</p>
 
           <div class="nav-mobile-wrapper">
             <div class="fries-menu display-f">
@@ -61,7 +63,7 @@
               </li>
               <li class="display-f">
                 <i class="fa-solid fa-medal"></i>
-                <a href="#project" class="nav-item">Projects</a>
+                <a href="#projects" class="nav-item">Projects</a>
               </li>
               <li class="display-f">
                 <i class="fa-sharp fa-solid fa-address-card"></i>
@@ -75,7 +77,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#qualification">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -112,7 +114,6 @@
             <img draggable="false" class="tilt img" src="./assets/images/hero.png" alt="" />
           </div>
         </section>
-        <!-- *hero section ends -->
 
         <!-- ================== 
             *about section starts 
@@ -325,10 +326,81 @@
           </div>
         </section>
 
+        <!-- ========             
+            *Projects
+            ========= -->
         <section id="projects">
           <h2 class="sub-title">Projects</h2>
-          <p class="about-text">My Proudest Project</p>
+          <p class="about-text">Most recent work</p>
+
+          <div class="swiper">
+            <div class="projects-img-wrapper swiper-wrapper">
+              <!-- ==============
+                *project card 1
+                =============== -->
+              <div class="project-card swiper-slide">
+                <div class="project-img">
+                  <img src="assets/projects-img/austin-distel-Hg3BHX6U5jg-unsplash.jpg" alt="podcast" class="img" />
+                </div>
+                <div class="project-titles">
+                  <h2>Podcast Di Noice</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet asperiores perferendis labore cumque distinctio!</p>
+                  <button class="project-button">Dengarkan<i class="fa-solid fa-angle-right"></i></button>
+                </div>
+              </div>
+
+              <!-- ==============
+                *project card 2
+                =============== -->
+              <div class="project-card swiper-slide">
+                <div class="project-img">
+                  <img src="assets/projects-img/kal-visuals-zE3jMxLFCIg-unsplash.jpg" alt="podcast" class="img" />
+                </div>
+                <div class="project-titles">
+                  <h2>Video Editor</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet asperiores perferendis labore cumque distinctio!</p>
+                  <button class="project-button">Lihat Channel<i class="fa-solid fa-angle-right"></i></button>
+                </div>
+              </div>
+
+              <!-- ==============
+                *project card 3
+                =============== -->
+              <div class="project-card swiper-slide">
+                <div class="project-img">
+                  <img src="assets/projects-img/firmbee-com-gcsNOsPEXfs-unsplash.jpg" alt="podcast" class="img" />
+                </div>
+                <div class="project-titles">
+                  <h2>Social Media Planner</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet asperiores perferendis labore cumque distinctio!</p>
+                  <button class="project-button">Lihat Lebih lanjut<i class="fa-solid fa-angle-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </section>
+
+        <!-- ================
+            *Work In Progress 
+            ================= -->
+        <section id="contact">
+          <h2 class="sub-title">Let's Connect</h2>
+          <p class="about-text">Get in touch</p>
+
+          <div class="contact-me-container display-f">
+            <i class="fa-solid fa-envelope"></i>
+            <p>listianaannisa@gmail.com</p>
+          </div>
+          <div class="contact-me-container display-f">
+            <i class="fa-solid fa-phone"></i>
+            <p>085718803699</p>
+          </div>
+        </section>
+
+        <footer>
+          <p>Made With ✋ by<a href="#"> @ikhlasdansantai</a></p>
+        </footer>
         <div class="scroll-to-top"></div>
       </main>
     </div>
@@ -342,10 +414,12 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <!-- *particle.js links -->
+    <!-- particle.js links -->
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
 
+    <!-- Swiper jangan mencuri-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- vanilla tilt.js links -->
     <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
@@ -359,8 +433,7 @@
 
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> -->
 
-    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
+    <!-- ==== vanilla JS 💖 ==== -->
     <script src="js/script.js"></script>
   </body>
 </html>

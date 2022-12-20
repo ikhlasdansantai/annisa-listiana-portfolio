@@ -26,7 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  height: 10000000000px;
   background: #f7f7f7;
   font-family: "Poppins", sans-serif;
 }
@@ -68,13 +67,17 @@ header {
   padding: var(--padding);
   justify-content: space-between !important;
   align-items: center;
-  background-color: #bbb;
+  /* background-color: #bbb; */
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 9999999999;
   padding: 0;
+  background-color: #f5f5f5;
+  box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 nav {
@@ -318,7 +321,7 @@ nav {
   *Skills
    ====== */
 .skills {
-  --padding: 5rem 1.5rem;
+  --padding: 2rem 1.5rem;
   text-align: center;
   padding: var(--padding);
 }
@@ -526,7 +529,62 @@ nav {
   text-align: center;
   padding: var(--padding);
 }
+.projects-img-wrapper {
+  --margin: 3rem 0;
+  margin: var(--margin);
+}
+.project-card {
+  text-align: left;
+}
+.project-img {
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+.project-titles {
+  margin: 2rem 0;
+}
+.project-titles p {
+  margin: 1rem 0;
+}
 
+.project-button {
+  background-color: var(--purple-clr);
+  border-radius: 0.3rem;
+  padding: 1rem 1.3rem;
+  color: #f5f5f5;
+  position: relative;
+}
+.project-button i {
+  margin-left: 0.5rem;
+}
+
+#contact {
+  margin: 3rem 0;
+  padding: var(--padding);
+  text-align: center;
+}
+.contact-me-container {
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.contact-me-container i {
+  font-size: 2rem;
+  color: var(--purple-clr);
+}
+
+/* =======
+  *Footer 
+   ====== */
+footer {
+  margin-bottom: 5rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+footer a {
+  color: var(--purple-clr);
+  font-weight: bold;
+}
 /* ============== 
   *Media Querries
   =============== */
@@ -587,6 +645,10 @@ nav {
     justify-content: space-between !important;
     margin-right: 3rem;
   }
+  .nav-items-desktop li a {
+    color: #333;
+    font-weight: bold;
+  }
   .nav-mobile-wrapper {
     display: none;
   }
@@ -612,7 +674,7 @@ nav {
     align-items: center;
   }
   main {
-    margin: 5rem 0;
+    margin-top: 5rem;
     grid-column: 2 / 4;
   }
   header {
@@ -662,9 +724,6 @@ nav {
   .skills {
     padding: 5rem 0;
   }
-  #qualification {
-    padding: 10rem 0;
-  }
   .edu-work-container {
     justify-content: center;
     gap: 8rem;
@@ -680,6 +739,17 @@ nav {
   }
   .container p {
     font-size: 1rem;
+  }
+  footer {
+    padding: 0.5rem 0;
+    margin: 0;
+    background-color: #333;
+  }
+  footer p {
+    color: #f5f5f5;
+  }
+  footer a {
+    color: var(--yellow-clr);
   }
 }
 @media (min-width: 992px) {

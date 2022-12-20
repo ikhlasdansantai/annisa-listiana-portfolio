@@ -1,3 +1,13 @@
+let docTitle = document.title;
+
+window.addEventListener("blur", () => {
+  document.title = "Kembali Sayang :(";
+});
+
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});
+
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
   strings: ["College Student", "Mobile Photographer", "Content Writer", "Editor", "Junior Graphic Designer"],
@@ -6,7 +16,41 @@ var typed = new Typed(".typing-text", {
   backSpeed: 45,
   backDelay: 600,
 });
-// <!-- typed js effect ends -->
+
+// <!-- Swiper Jangan Mencuri -->
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  grabCursor: true,
+  speed: 1000,
+  spaceBetween: 40,
+
+  autoplay: {
+    delay: 4000,
+  },
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  breakpoints: {
+    600: {
+      slidesPerView: 3,
+      loop: false,
+    },
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
 
 // todo dropdown
 const dropdownIcons = document.getElementsByClassName("accordion-menu");
