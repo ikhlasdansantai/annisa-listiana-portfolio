@@ -1,7 +1,7 @@
 let docTitle = document.title;
 
 window.addEventListener("blur", () => {
-  document.title = "Kembali Sayang :(";
+  document.title = "Jangan pergi beb :(";
 });
 
 window.addEventListener("focus", () => {
@@ -52,6 +52,14 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+// sweet
+function underDevelopment() {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Konten belum ada!",
+  });
+}
 // todo dropdown
 const dropdownIcons = document.getElementsByClassName("accordion-menu");
 // const softwareToolImages = document.getElementsByClassName("software-skill-wrapper")[0];
